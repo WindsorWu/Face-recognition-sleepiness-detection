@@ -203,7 +203,7 @@ class MainUI(QtWidgets.QWidget, main_ui.Ui_Form):
         # 使用人脸检测器get_frontal_face_detector
         self.detector = dlib.get_frontal_face_detector()
         # dlib的68点模型，使用作者训练好的特征预测器
-        self.predictor = dlib.shape_predictor("./model/shape_predictor_68_face_landmarks.dat")
+        self.predictor = dlib.shape_predictor("model/shape_predictor_68_face_landmarks.dat")
         data = {
             'type':'msg',
             'value':u"加载模型成功!!!\n"
